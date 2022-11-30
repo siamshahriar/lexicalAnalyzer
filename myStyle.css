@@ -1,0 +1,18 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 100px;
+}
+table {
+  margin-top: 10px;
+}
+textarea {
+  width: 305px;
+  resize: none;
+  height: 100px;
+}

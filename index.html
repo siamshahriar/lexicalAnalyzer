@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="LexerScanner.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Lexer Scanner</title>
+  </head>
+  <body>
+    <h2 class="text-3xl text-center mt-16 font-mono font-semibold">
+      Lexical Analyzer
+    </h2>
+    <textarea
+      class="block mx-auto textarea textarea-primary w-1/2 mt-10"
+      id="area"
+    ></textarea
+    ><br />
+    <button class="btn btn-success block mx-auto" onclick="lexicalScanner()">
+      Check
+    </button>
+
+    <div class="overflow-x-auto mt-10">
+      <table class="table w-1/2 mx-auto">
+        <!-- head -->
+        <thead>
+          <tr>
+            <th>Lexeme</th>
+            <th>Count</th>
+            <th>Token</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+    <footer
+      class="footer footer-center p-4 bg-base-100 text-base-content mt-[500px]"
+    >
+      <div>
+        <p class="text-xl font-semibold">Team Grounded</p>
+      </div>
+    </footer>
+  </body>
+</html>
